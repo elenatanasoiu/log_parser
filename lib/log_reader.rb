@@ -15,16 +15,18 @@ class LogReader
     end
   end
 
-  def group_urls
-    log_items.group_by { |l| l.url }
-  end
-
   def pages_by_views
-    group_urls.map { |url, items| [url, items.count]}.sort { |a,b| a[1] <=> b[1] }.reverse
+    log_items.group_by { |l| l.url }.
+        map { |url, items| [url, items.count]}.
+        sort { |a,b| a[1] <=> b[1] }.
+        reverse
   end
 
-  def pages_by_unique_views
-    group_urls.map { |url, items| [url, items.map(&:ip).uniq.count] }.sort { |a, b| a[1] <=> b[1] }.reverse
+  def pages_by_unique_visits
+    log_items.group_by { |l| l.url }.
+        map { |url, items| [url, items.map(&:ip).uniq.count] }.
+        sort { |a, b| a[1] <=> b[1] }.
+        reverse
   end
 
 end

@@ -1,3 +1,11 @@
+# Install Rspec
+
+$ bundle install
+
+# For Testing
+
+$ rspec spec
+
 # Execution
 
 $ bin/parser logs/webserver.log
@@ -21,3 +29,4 @@ Top of webpages with most unique page views:
 /help_page/1 23
 /about/2 22
 /about 21
+

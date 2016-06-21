@@ -11,4 +11,4 @@ log_reader.pages_by_views.each{ |url, views| puts "#{url} #{views}"}
 
 puts "\nTop of webpages with most unique page views:"
 
-log_reader.pages_by_unique_views.each { |url, views| puts "#{url} #{views}"}
+log_reader.pages_by_unique_visits.each { |url, visits| puts "#{url} #{visits}"}
