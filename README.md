@@ -1,13 +1,16 @@
 # Install Rspec
 
+```bash
 $ bundle install
 
 # For Testing
 
+```bash
 $ rspec spec
 
 # Execution
 
+```bash
 $ bin/parser logs/webserver.log
 
 # Result
