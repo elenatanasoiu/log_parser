@@ -1,0 +1,14 @@
+#!/usr/bin/env ruby
+require_relative '../lib/log_reader'
+
+log_reader = LogReader.new(ARGV[0])
+
+log_reader.parse_log_file
+
+puts "\nTop of webpages with most page views:"
+
+log_reader.pages_by_views.each{ |url, views| puts "#{url} #{views}"}
+
+puts "\nTop of webpages with most unique page views:"
+
+log_reader.pages_by_unique_views.each { |url, views| puts "#{url} #{views}"}
