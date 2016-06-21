@@ -1,22 +1,19 @@
 # Install Rspec
 
-```bash
-$ bundle install
+    $ bundle install
+
 
 # For Testing
 
-```bash
-$ rspec spec
+    $ rspec spec
 
 # Execution
 
-```bash
-$ bin/parser logs/webserver.log
+    $ bin/parser logs/webserver.log
 
 # Result
 
 ```bash
-
 Top of webpages with most page views:
 /about/2 90
 /contact 89
@@ -32,4 +29,5 @@ Top of webpages with most unique page views:
 /help_page/1 23
 /about/2 22
 /about 21
+```
 
