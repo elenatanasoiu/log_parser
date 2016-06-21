@@ -1,9 +1,10 @@
 # Execution
 
-`bin/parser logs/webserver.log
+$ bin/parser logs/webserver.log
 
 # Result
 
+```bash
 
 Top of webpages with most page views:
 /about/2 90
