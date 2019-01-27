@@ -1,0 +1,19 @@
+{
+  "addons": [
+
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/ruby"
+    }
+  ],
+  "description": "A small tool that parses logs",
+  "env": {
+  },
+  "formation": {
+  },
+  "name": "log_parser",
+  "scripts": {
+  },
+  "stack": "heroku-18"
+}
